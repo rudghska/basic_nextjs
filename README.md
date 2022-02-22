@@ -1,4 +1,4 @@
-# NextJs Introduction
+# Basic NextJS
 
 ## styled jsx
 
