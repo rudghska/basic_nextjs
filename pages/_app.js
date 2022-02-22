@@ -1,7 +1,20 @@
-import '../styles/globals.css'
+import React from 'react';
+import NavBar from '../components/NavBar';
+import '../styles/globals.css';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+export default function App({ Component, pageProps }) {
+  return (
+    <React.Fragment>
+      <NavBar />
+      <Component {...pageProps} />
+      <span>Hello App Component</span>
+      <style jsx global>
+        {`
+          a {
+            color: #fff;
+          }
+        `}
+      </style>
+    </React.Fragment>
+  );
 }
-
-export default MyApp
